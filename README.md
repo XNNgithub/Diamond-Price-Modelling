@@ -43,6 +43,7 @@ For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 an
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/202f7912-0884-4586-9dc4-f8146447495d)
 
 Other data rows removed were:
+
 culet_condition features of Chipped (qty 18) and Abraded (qty 8), girdle_min features XTN and STN (quantities 290 and 24), and girdle_max features XTN and STN (quantities 33 and 12),fluor_intensity features of Unknown (qty 113) and Slight (qty 12) and finally polish features of Fair (qty 7) and Poor (qty 2)
 
 This reduced our dataset to 213,134 rows.
