@@ -206,8 +206,22 @@ It covers data preprocessing, visualization, and modelling preparation.
 The analysis is a crucial step in understanding the dataset and preparing it for predictive modelling.
 The results can be used to build predictive models to estimate the total sales price of diamonds.
 
-## Authors;
+## Authorship
+
+Created and submitted as Group Project for Monash University Data Analytics Boot Camp (November 2023).
+
+Data collated, cleaned and code written by:
+
 •	Jancel Adiong
 •	Sagar Bora
 •	Helena Chen
 •	Caroline Grant
+
+## References
+
+* Diamond data
+  https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
+  
+* Diamond information
+  [image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/c149e16b-4a73-439d-931d-8374b2e80e18)
+
