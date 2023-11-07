@@ -200,11 +200,7 @@ We calculate the mean of cross-validation scores for the models using the negati
 ### Testing the Model with the Best Score on the Test Set
 Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
 
-## Conclusion
-This document provides an overview of the analysis and EDA performed on the diamond dataset.
-It covers data preprocessing, visualization, and modelling preparation. 
-The analysis is a crucial step in understanding the dataset and preparing it for predictive modelling.
-The results can be used to build predictive models to estimate the total sales price of diamonds.
+
 
 ## Authorship
 
