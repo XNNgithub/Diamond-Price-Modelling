@@ -42,6 +42,11 @@ We also removed rows where the count quantities of some features were extremely 
 For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 and 1 respectively.  
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/202f7912-0884-4586-9dc4-f8146447495d)
 
+Other data rows removed were:
+culet_condition features of Chipped (qty 18) and Abraded (qty 8), girdle_min features XTN and STN (quantities 290 and 24), and girdle_max features XTN and STN (quantities 33 and 12),fluor_intensity features of Unknown (qty 113) and Slight (qty 12) and finally polish features of Fair (qty 7) and Poor (qty 2)
+
+This reduced out dataset to 213,134 rows.
+
 
 ### Data Binning and Grouping
 Certain features are grouped or combined into new categories.  
@@ -64,7 +69,7 @@ We wanted to understand how strongly each numerical feature is related to the ta
 ### Heatmap
 We then ran a heatmap to visualize the Pearson correlation, making it easier to identify and interpret relationships between the features.
 
-The strong positive correlation of 0.75 between carat weight and total sales price suggests that, in this dataset, larger diamonds tend to command higher prices.
+The strong positive correlation of 0.75 between carat weight and total sales price suggests that, in this dataset, higher carat weight diamonds tend to command higher prices.
 
 This finding underscores the significance of carat weight as a key determinant of a diamond's value, potentially reflecting consumer preferences for larger, more substantial stones.
 
