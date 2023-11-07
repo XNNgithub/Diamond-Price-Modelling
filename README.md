@@ -67,6 +67,9 @@ Fancy_color_secondary_color features of Red, Gray, Blue, and Violetwere combined
 ### Checking Binned Value Counts
 After binning the data, value counts are checked to verify the grouping process.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/ffa3588c-49f3-439b-af40-614fea2a1d1e)
+
+
 ## Selecting Features for Modelling
 Categorical and numerical features are separated, and the target variable is defined.
 
