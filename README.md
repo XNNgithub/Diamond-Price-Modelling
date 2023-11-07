@@ -80,9 +80,8 @@ Pearson correlation and Seaborn heatmap are used to analyse the relationships be
 
 ### Pearson correlation
 
-![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/139c5680-5718-4f12-a5ea-c314ff931f84)
-
 We wanted to understand how strongly each numerical feature is related to the target variable “total_sales_price” and Pearson correlation is suitable for identifying linear relationships.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/139c5680-5718-4f12-a5ea-c314ff931f84)
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4ea8607b-72d0-4254-a6e6-b2e141ceb833)
 
@@ -90,7 +89,6 @@ We wanted to understand how strongly each numerical feature is related to the ta
 
 We then ran a heatmap to visualize the Pearson correlation, making it easier to identify and interpret relationships between the features.
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4e7d9481-d98a-43d1-89b8-fad860bc4cfc)
-
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/c126966f-2d70-4985-b438-1e8896d30ec5)
 
