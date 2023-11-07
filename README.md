@@ -221,7 +221,7 @@ Data collated, cleaned and code written by:
 
  * Diamond data:
   
-  https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
+   https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
   
  * Diamond information
 
