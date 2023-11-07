@@ -70,16 +70,27 @@ After binning the data, value counts are checked to verify the grouping process.
 ## Selecting Features for Modelling
 Categorical and numerical features are separated, and the target variable is defined.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/1d3e439a-2978-472b-8b22-f232e48f8ea4)
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/5c7806f3-50f2-4db4-84ae-b3617cc8eba4)
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4dcffc1c-8bf8-48e8-abce-098d7ef42a06)
+
+
 ## Correlation Analysis
 Pearson correlation and Seaborn heatmap are used to analyse the relationships between numerical features.  
 
 ### Pearson correlation
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/139c5680-5718-4f12-a5ea-c314ff931f84)
+
 We wanted to understand how strongly each numerical feature is related to the target variable “total_sales_price” and Pearson correlation is suitable for identifying linear relationships.
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4ea8607b-72d0-4254-a6e6-b2e141ceb833)
 
 ### Heatmap
+
 We then ran a heatmap to visualize the Pearson correlation, making it easier to identify and interpret relationships between the features.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4e7d9481-d98a-43d1-89b8-fad860bc4cfc)
+
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/c126966f-2d70-4985-b438-1e8896d30ec5)
 
