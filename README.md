@@ -1,6 +1,6 @@
 # Diamond-Price-Modelling
 
-##Diamond Analysis and EDA
+## Diamond Analysis and EDA
 This document provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
 
 
