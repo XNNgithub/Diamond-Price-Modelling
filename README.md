@@ -115,7 +115,8 @@ Created the ExtraTreesRegressor model and fit the data.
 Get feature importances and display the top 12 features.
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/781a1d74-b0b8-4cf6-bd24-39a4966371ed)
 
-![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/14623553-fae5-404a-9b55-097adb6c95e9)
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/d9037c77-215c-44fc-ad5c-70cc7a79f644)
+
 
 
 ### 9.2 Random Forest Regressor (One-Hot Encoding)
@@ -130,17 +131,25 @@ Created the RandomForestRegressor model and fit the data.
 Get feature importances and display the top 12 features.
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/b35c808e-2345-4420-a69e-b6481135e251)
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/1787d67d-3085-4530-be24-1685f91a99e3)
 
 
 
 ### 9.3 Random Forest Regressor (Label Encoding)
 The categorical features are encoded using label encoding for use with the Random Forest Regressor.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/6fc1b696-f302-44dd-bc19-d25e852ff2ee)
 
 Combined the Label Encoded categorical features with the numerical features.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/8ca7b20f-2f1a-4e49-bcd0-0abf88b87f6a)
 
 Created the RandomForestRegressor model and fit the data.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/5f1b0613-5377-4c8f-9bd6-c35f88adcb3b)
 
 Get feature importances and display top 12.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/21faa5e3-0937-44c5-96b9-b5ecd3aafedf)
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/be06a45d-8c45-4db1-993b-0b2584f9531b)
+
 
 The significant features in 9.1 Extra Trees and 9.2 Random Forest Regressor methods are similar, based on the same hot encoding of categorical features.
 9.3 Random Forest Regressor using label-encoded categorical features has a different set of important features. 
