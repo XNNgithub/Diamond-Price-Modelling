@@ -182,23 +182,23 @@ The final dataset (label encoded categorical data + numerical data) is saved and
 This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.84.
 
 ## Steps involved in Model Training for Diamond
--	Setting up top 4 Features and Target
-We start by setting up the features and target variable for the diamond price prediction. The features include various attributes such as cut, color, clarity, and carat weight, while the target is the price of the diamond.
+1.	Setting up top 4 Features and Target
+- We start by setting up the features and target variable for the diamond price prediction. The features include various attributes such as cut, color, clarity, and carat weight, while the target is the price of the diamond.
 
--	Setting up top 11 Features and Target
-We start by setting up the features and target variable for the diamond price prediction. The features include various attributes such as cut, color, clarity, depth percent, table percent, meas length, meas width, meas depth, fancy color, fancy color intensity and carat weight, while the target is the price of the diamond.
+2.	Setting up top 11 Features and Target
+- We start by setting up the features and target variable for the diamond price prediction. The features include various attributes such as cut, color, clarity, depth percent, table percent, meas length, meas width, meas depth, fancy color, fancy color intensity and carat weight, while the target is the price of the diamond.
 
 ### Building a Pipeline of Standard Scaler and Models
 We create pipelines that standardise the data and include four different regression models: Linear Regression, Decision Tree, Random Forest, K-Nearest Neighbors, and the model with the best cross-validation score.
 
 ### Fitting Models on the Training Data
-We fit all the models on the training data to train them using the respective datasets with either the top 11 or top 4 features.
+Train all selected models using the training data, each using either the top 11 or top 4 features dataset.
 
 ### Selecting the Model with the Best Cross-Validation Score
-We calculate the mean of cross-validation scores for the models using the negative root mean square error (RMSE) as the evaluation metric. This helps us understand the performance of each model during training. Based on the cross-validation scores, we identify the model with the best performance. This model will be selected for further evaluation and testing.
+We calculate the mean of cross-validation scores for the models using the negative root mean square error as the evaluation metric. Based on the cross-validation scores, we identify the model with the best performance. This model will be selected for further evaluation and testing.
 
 ### Testing the Model with the Best Score on the Test Set
-Among the models, Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
+Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
 
 ## Conclusion
 This document provides an overview of the analysis and EDA performed on the diamond dataset.
