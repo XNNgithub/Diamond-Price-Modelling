@@ -5,7 +5,7 @@ This document provides an overview of the analysis and exploratory data analysis
 
 
 ## Introduction
-The aim of our project is to uncover relationships in the quality and features of diamonds and their impact on selling prices.  By doing so, we aim to create tools for selecting different feature options based on specified values or predicting estimated pricing.  This tool could then be used by sellers as a mechanism to entice customers.
+The aim of our project is to uncover relationships in the quality and features of gem diamonds and their impact on selling prices.  By doing so, we aim to create tools for selecting different feature options based on specified values or predicting estimated pricing.  This tool could then be used by sellers as a mechanism to entice customers.
 
 The dataset used in this analysis was sourced from Kaggle, providing details on various attributes of diamonds, including their quality, characteristics, and pricing information. 
 
