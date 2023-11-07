@@ -16,21 +16,32 @@ This document presents an analysis and exploratory data analysis (EDA) of a data
 
 ## Requirements
 Before running the code, ensure you have the following libraries and modules installed:
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/695c2f9d-ed6f-4d0c-b611-8cbfb95ea264)
  
 ## Data Loading and Initial Inspection
 The analysis begins with loading the dataset and performing an initial inspection. The dataset is loaded using Pandas and the first few rows are displayed for a quick overview.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/006d17d5-21a7-411e-9bfe-88caf1e2604c)
 
 ## Data Preprocessing
 ### Removing Rows with Zero Values
 To ensure data quality, rows with zero values are removed from the dataset.  This reduced the rows from 219,702 to 213,670.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/57afda98-4292-48a4-ac7e-4d570eee68c2)
+
+
 ### Review feature counts
 We reviewed the counts by feature to assess the data distribution for machine learning.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/12e9f9a9-65fc-4f70-8642-25e4432626d2)
+
 ### Remove rows based on outlier data
-We also removed rows where the count quantities of some features were so low.
+We also removed rows where the count quantities of some features were extremely low and would be hard for the model to learn.
 
 For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 and 1 respectively.  
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/202f7912-0884-4586-9dc4-f8146447495d)
+
 
 ### Data Binning and Grouping
 Certain features are grouped or combined into new categories.  
