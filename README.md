@@ -73,10 +73,14 @@ Categorical and numerical features are separated, and the target variable is def
 Pearson correlation and Seaborn heatmap are used to analyse the relationships between numerical features.  
 
 ### Pearson correlation
-We wanted to understand how strongly each numerical feature is related to the target variable “total_sales_price” and Pearson correlation is suitable for identifying linear relationships
+We wanted to understand how strongly each numerical feature is related to the target variable “total_sales_price” and Pearson correlation is suitable for identifying linear relationships.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4ea8607b-72d0-4254-a6e6-b2e141ceb833)
 
 ### Heatmap
 We then ran a heatmap to visualize the Pearson correlation, making it easier to identify and interpret relationships between the features.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/c126966f-2d70-4985-b438-1e8896d30ec5)
 
 The strong positive correlation of 0.75 between carat weight and total sales price suggests that, in this dataset, higher carat weight diamonds tend to command higher prices.
 
@@ -85,10 +89,14 @@ This finding underscores the significance of carat weight as a key determinant o
 ## Seaborn Pair Plot
 A Seaborn pair plot was created to visualize relationships among the features
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/d5a6f70e-8732-452f-8781-8e3ca1941bf5)
+
 ## Analysis of Variance (ANOVA)
 We performed ANOVA as we wanted to investigate whether the different categories within the categorical features have a statistically significant impact on the target variable (total_sales_price).
 
 This is a statistical method used to assess whether there are statistically significant differences between the means of two or more groups.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/5885c5d1-fbc8-4042-8866-eb1e8cdb633a)
 
 These results show that Cut, Cut quality, Color, Fancy color-dominant color and Fancy color intensity are significant categories in relation to the sales price (target variable).
 
@@ -99,10 +107,16 @@ Three models are considered: Extra Trees Regressor, Random Forest Regressor with
 
 ### 9.1 Extra Trees Regressor (One-Hot Encoding)
 The categorical features are encoded using one-hot encoding for use with the Extra Trees Regressor.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/52169895-eb83-4390-98a9-d00af07336af)
 
 Created the ExtraTreesRegressor model and fit the data.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/b0fff020-8c74-44a6-a15d-bdf5f648f05d)
 
 Get feature importances and display the top 12 features.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/781a1d74-b0b8-4cf6-bd24-39a4966371ed)
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/14623553-fae5-404a-9b55-097adb6c95e9)
+
 
 ### 9.2 Random Forest Regressor (One-Hot Encoding)
 The categorical features are encoded using one-hot encoding for use with the Random Forest Regressor.
