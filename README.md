@@ -219,9 +219,11 @@ Data collated, cleaned and code written by:
 
 ## References
 
-* Diamond data
+ * Diamond data:
+  
   https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
   
-* Diamond information
-  [image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/c149e16b-4a73-439d-931d-8374b2e80e18)
+ * Diamond information
 
+   https://www.brilliantearth.com
+   
