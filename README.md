@@ -121,9 +121,17 @@ Get feature importances and display the top 12 features.
 ### 9.2 Random Forest Regressor (One-Hot Encoding)
 The categorical features are encoded using one-hot encoding for use with the Random Forest Regressor.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/6394831b-f3d0-473c-b687-ded6bba992df)
+
 Created the RandomForestRegressor model and fit the data.
 
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/12a12a79-8724-4fe0-bfc3-ac0066e2cafe)
+
 Get feature importances and display the top 12 features.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/b35c808e-2345-4420-a69e-b6481135e251)
+
+
+
 
 ### 9.3 Random Forest Regressor (Label Encoding)
 The categorical features are encoded using label encoding for use with the Random Forest Regressor.
