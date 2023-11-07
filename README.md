@@ -45,14 +45,23 @@ For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 an
 Other data rows removed were:
 culet_condition features of Chipped (qty 18) and Abraded (qty 8), girdle_min features XTN and STN (quantities 290 and 24), and girdle_max features XTN and STN (quantities 33 and 12),fluor_intensity features of Unknown (qty 113) and Slight (qty 12) and finally polish features of Fair (qty 7) and Poor (qty 2)
 
-This reduced out dataset to 213,134 rows.
+This reduced our dataset to 213,134 rows.
 
 
 ### Data Binning and Grouping
 Certain features are grouped or combined into new categories.  
 This approach helps in addressing low counts for certain quality values and making the data more manageable and meaningful for analysis and modelling.
 
-For example, fluor_color features of Green, White and Orange had counts of 54, 42 and 9 respectively were combined into an “Other” value.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/033d329b-fde4-4b42-825a-3a79055c0741)
+
+Combinations are listed here:
+Clarity of I1, I2 and I3 wre all combined as they are all measurements of levels of inclusions (flaws) within the diamond.  They had low counts (6717, 921, 84)
+Fluor_color features of Green, White and Orange had counts of 54, 42 and 9 respectively were combined into an “Other” value.
+Cut features of Cushion and Modified Cusion were combined into 1 value of "Cushion" (3914 and 515 counts) 
+Symmetry features of Fair (319) and Poor (2) were combinned to an "Other" value
+Culet_size features of L, SL, EL and VL to a combined value of "L/SL/EL/VL" (a total of 77 rows)
+Fancy_color_dominant_color features of Purple, Gray, Blue, Chameleon, Red and Black were combined into an "Other" value with 181 total quantity.
+Fancy_color_secondary_color features of Red, Gray, Blue, and Violetwere combined into and "Other" value with 44 total quantity,
 
 ### Checking Binned Value Counts
 After binning the data, value counts are checked to verify the grouping process.
