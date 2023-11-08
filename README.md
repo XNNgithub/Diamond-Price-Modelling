@@ -1,6 +1,6 @@
 # Diamond-Price-Modelling
 
-## Diamond Analysis and EDA
+# Diamond Analysis and EDA
 This section provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
 
 
@@ -99,7 +99,7 @@ The strong positive correlation of 0.75 between carat weight and total sales pri
 This finding underscores the significance of carat weight as a key determinant of a diamond's value, potentially reflecting consumer preferences for larger, more substantial stones.
 
 ## Seaborn Pair Plot
-A Seaborn pair plot was created to visualize relationships among the features
+A Seaborn pair plot was created to visualize relationships among the features.  Regression lines were added to the scatterplots for a better understanding of linear relationships.
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/d5a6f70e-8732-452f-8781-8e3ca1941bf5)
 
@@ -173,9 +173,24 @@ We considered the interpretability of the models and determined we are not inter
 The increase in dimensionality using one-hot ended data on an already large dataset would impact model complexity, training time and performance.
 
 ## Feature Selection
-The analysis concludes by creating a new DataFrame for modelling.  
-We kept the top 11 features from the Label encoded Random Forest regressor model results.  
-The final dataset (label encoded categorical data + numerical data) is saved and exported to csv.
+In the process of preparing data for modeling, we performed feature selection to determine which attributes have the most significant impact on our models. We created three different DataFrames for testing within the model training phase:
+
+1. **Top 11 Features (Label Encoded Random Forest Regressor Model Results):**
+   - We selected the top 11 features based on the results of the Label Encoded Random Forest Regressor model. These features are believed to be highly influential in predicting diamond prices.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/05267fc8-98ed-4cfb-83b6-7c7733da3e5f)
+
+2. **6 Top Features (Random Forest Regressor Label Encoded Results):**
+   - In this variant, we narrowed our focus to the top 6 features derived from the Random Forest Regressor Label Encoded results. We excluded measurement-related features to assess their impact on model training.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/7ec18d1b-8add-42b1-8d4d-60f0722eb694)
+
+3. **The "4 C's" DataFrame:**
+   - This DataFrame comprises four essential attributes in the diamond classification known as the "4 C's" – Cut, Color, Clarity, and Carat weight. These attributes are often fundamental factors in diamond purchasing decisions.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/38e5fa47-0e45-40cc-8133-a471a9824cb8)
+
+These DataFrames represent different sets of features used in our analysis. The final dataset, including label-encoded categorical data and numerical data, is saved and exported to a CSV file for further modeling.
 
 # Model Training for Diamond Price Prediction
 This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.82.
