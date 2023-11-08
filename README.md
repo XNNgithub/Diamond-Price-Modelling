@@ -10,9 +10,7 @@ The aim of our project is to uncover relationships in the quality and features o
 The dataset used in this analysis was sourced from Kaggle, providing details on various attributes of diamonds, including their quality, characteristics, and pricing information. 
 
 https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
-
-
-This document presents an analysis and exploratory data analysis (EDA) of a dataset focusing on understanding the relationships between various features and preparing the data for predictive modelling. 
+ 
 
 ## Requirements
 Before running the code, ensure you have the following libraries and modules installed:
