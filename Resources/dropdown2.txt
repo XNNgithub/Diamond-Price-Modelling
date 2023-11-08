@@ -1,0 +1,8 @@
+0: D: Absolutely colorless or icy white
+1: E: Colorless
+2: F: Colorless
+3: G: Colorless
+4: H: Near-colorless
+5: I: Near-colorless
+6: J: Near-colorless
+7: K: Noticeable color

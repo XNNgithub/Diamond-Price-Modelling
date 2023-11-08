@@ -1,0 +1,7 @@
+1: IF: Internally Flawless
+2: SI1: Slightly included
+3: SI2: Slightly included
+4: VS1: Very slightly included
+5: VS2: Very slightly included
+6: VVS1: Very very slightly included
+7: VVS2: Very very slightly included

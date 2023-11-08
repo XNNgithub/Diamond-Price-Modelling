@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your Diamonds</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <h1>Know Your Diamonds</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showTab('tab1')" class="active">Home</a>
+        <a href="#" onclick="showTab('tab2')">Calculate Price</a>
+        <a href="#" onclick="showTab('tab3')">Understanding the 4 C's</a>
+    </nav>
+    <div id="tab1" class="tab-content active"></div>
+    <div id="tab2" class="tab-content">
+        <div class="input-group">
+            <label for="dropdown1">Cut:</label>
+            <select id="dropdown1" name="dropdown1" placeholder="Select Value"></select>
+        </div>
+        <div class="input-group">
+            <label for="dropdown2">Color:</label>
+            <select id="dropdown2" name="dropdown2"></select>
+        </div>
+        <div class="input-group">
+            <label for="dropdown3">Clarity:</label>
+            <select id="dropdown3" name="dropdown3"></select>
+        </div>
+        <div class="input-group">
+            <label for="dropdown4">Carat Weight:</label>
+            <select id="dropdown4" name="dropdown4"></select>
+        </div>
+        <div class="button-container">
+            <button onclick="sendData()">Calculate Price</button>
+        </div>
+        <div class="input-group">
+            <div id="output-container" class="tab-content">
+                <p id="result-text"></p>
+            </div>
+        </div>
+    </div>
+    <div id="tab3" class="tab-content"></div>
+    <script src="src/script.js"></script>
+</body>
+</html>
