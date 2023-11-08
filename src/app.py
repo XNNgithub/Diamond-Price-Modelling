@@ -33,13 +33,7 @@ def process():
 
     # Text to display on the html page
     concatenated_text = f"The estimated price of Diamond is ${format(int(predicted_price[0]), ',')}"
-    # Image to display on html page
-    #image_url = url_for('static', filename='diamond_1.gif')
-    # Return the image and text
-    return jsonify({'concatenated_text': concatenated_text})
-    #return f'displayResult({{"image_url": "{image_url}", "concatenated_text": "{concatenated_text}"}});'
-    # Return the response back to page
-    #return f'displayResult({{"concatenated_text": "{concatenated_text}"}});'
+    return f'displayResult({{"concatenated_text": "{concatenated_text}"}});'
 
 if __name__ == '__main__':
     app.run(debug=True)

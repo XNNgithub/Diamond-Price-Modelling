@@ -52,6 +52,9 @@ nav a.active {
 }
 #tab2 {
     background-color: rgb(191, 200, 202);
+    background-image: url('../static/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 #tab3 {
     background-image: url('../static/Guide.png');
