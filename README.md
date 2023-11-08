@@ -1,7 +1,7 @@
 # Diamond-Price-Modelling
 
-## Diamond Analysis and EDA
-This document provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
+# Diamond Analysis and EDA
+This section provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
 
 
 ## Introduction
@@ -10,9 +10,7 @@ The aim of our project is to uncover relationships in the quality and features o
 The dataset used in this analysis was sourced from Kaggle, providing details on various attributes of diamonds, including their quality, characteristics, and pricing information. 
 
 https://www.kaggle.com/datasets/hrokrin/the-largest-diamond-dataset-currely-on-kaggle/data
-
-
-This document presents an analysis and exploratory data analysis (EDA) of a dataset focusing on understanding the relationships between various features and preparing the data for predictive modelling. 
+ 
 
 ## Requirements
 Before running the code, ensure you have the following libraries and modules installed:
@@ -37,7 +35,7 @@ We reviewed the counts by feature to assess the data distribution for machine le
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/12e9f9a9-65fc-4f70-8642-25e4432626d2)
 
 ### Remove rows based on outlier data
-We also removed rows where the count quantities of some features were extremely low and would be hard for the model to learn.
+We also removed rows where the count quantities of some features were extremely low and would be hard for a model to learn.  
 
 For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 and 1 respectively.  
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/202f7912-0884-4586-9dc4-f8146447495d)
@@ -51,7 +49,7 @@ This reduced our dataset to 213,134 rows.
 
 ### Data Binning and Grouping
 Certain features are grouped or combined into new categories.  
-This approach helps in addressing low counts for certain quality values and making the data more manageable and meaningful for analysis and modelling.
+This approach helps in addressing low counts for certain quality values and making the data more manageable and meaningful for analysis and modelling.  Feature logic was also taken into consideration to ensure the integrity of the feature was not negatively impacted. 
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/033d329b-fde4-4b42-825a-3a79055c0741)
 
@@ -79,11 +77,12 @@ Categorical and numerical features are separated, and the target variable is def
 
 
 ## Correlation Analysis
-Pearson correlation and Seaborn heatmap are used to analyse the relationships between numerical features.  
+Pearson correlation and heatmap are used to analyse the relationships between numerical features.  
 
 ### Pearson correlation
 
 We wanted to understand how strongly each numerical feature is related to the target variable “total_sales_price” and Pearson correlation is suitable for identifying linear relationships.
+
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/139c5680-5718-4f12-a5ea-c314ff931f84)
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/4ea8607b-72d0-4254-a6e6-b2e141ceb833)
@@ -100,7 +99,7 @@ The strong positive correlation of 0.75 between carat weight and total sales pri
 This finding underscores the significance of carat weight as a key determinant of a diamond's value, potentially reflecting consumer preferences for larger, more substantial stones.
 
 ## Seaborn Pair Plot
-A Seaborn pair plot was created to visualize relationships among the features
+A Seaborn pair plot was created to visualize relationships among the features.  Regression lines were added to the scatterplots for a better understanding of linear relationships.
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/d5a6f70e-8732-452f-8781-8e3ca1941bf5)
 
@@ -174,12 +173,27 @@ We considered the interpretability of the models and determined we are not inter
 The increase in dimensionality using one-hot ended data on an already large dataset would impact model complexity, training time and performance.
 
 ## Feature Selection
-The analysis concludes by creating a new DataFrame for modelling.  
-We kept the top 11 features from the Label encoded Random Forest regressor model results.  
-The final dataset (label encoded categorical data + numerical data) is saved and exported to csv.
+In the process of preparing data for modeling, we performed feature selection to determine which attributes have the most significant impact on our models. We created three different DataFrames for testing within the model training phase:
+
+1. **Top 11 Features (Label Encoded Random Forest Regressor Model Results):**
+   - We selected the top 11 features based on the results of the Label Encoded Random Forest Regressor model. These features are believed to be highly influential in predicting diamond prices.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/05267fc8-98ed-4cfb-83b6-7c7733da3e5f)
+
+2. **6 Top Features (Random Forest Regressor Label Encoded Results):**
+   - In this variant, we narrowed our focus to the top 6 features derived from the Random Forest Regressor Label Encoded results. We excluded measurement-related features to assess their impact on model training.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/7ec18d1b-8add-42b1-8d4d-60f0722eb694)
+
+3. **The "4 C's" DataFrame:**
+   - This DataFrame comprises four essential attributes in the diamond classification known as the "4 C's" – Cut, Color, Clarity, and Carat weight. These attributes are often fundamental factors in diamond purchasing decisions.
+
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/38e5fa47-0e45-40cc-8133-a471a9824cb8)
+
+These DataFrames represent different sets of features used in our analysis. The final dataset, including label-encoded categorical data and numerical data, is saved and exported to a CSV file for further modeling.
 
 # Model Training for Diamond Price Prediction
-This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.84.
+This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.82.
 
 ## Steps involved in Model Training for Diamond
 1.	Setting up top 4 Features and Target
@@ -196,11 +210,14 @@ Train all selected models using the training data, each using either the top 11 
 
 ### Selecting the Model with the Best Cross-Validation Score
 We calculate the mean of cross-validation scores for the models using the negative root mean square error as the evaluation metric. Based on the cross-validation scores, we identify the model with the best performance. This model will be selected for further evaluation and testing.
+![Screenshot 2023-11-08 at 8 43 17 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/c0638ee7-3b18-4640-b0d3-375611a7f362)
+
+![Screenshot 2023-11-08 at 8 43 37 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/8148e5db-70e7-4209-a143-6a4cd89fa328)
 
 ### Testing the Model with the Best Score on the Test Set
 Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
 
-
+![Screenshot 2023-11-08 at 8 44 06 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/10cb707e-4502-4fdc-ac40-f08856ca97bc)
 
 ## Authorship
 
