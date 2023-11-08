@@ -179,7 +179,7 @@ We kept the top 11 features from the Label encoded Random Forest regressor model
 The final dataset (label encoded categorical data + numerical data) is saved and exported to csv.
 
 # Model Training for Diamond Price Prediction
-This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.84.
+This project focuses on training a machine learning model for predicting diamond sales prices using two different datasets. The first dataset includes the top 11 features, achieving an accuracy of 0.87, while the second dataset comprises the top 4 features, resulting in an accuracy of 0.82.
 
 ## Steps involved in Model Training for Diamond
 1.	Setting up top 4 Features and Target
