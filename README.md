@@ -1,7 +1,7 @@
 # Diamond-Price-Modelling
 
 ## Diamond Analysis and EDA
-This document provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
+This section provides an overview of the analysis and exploratory data analysis (EDA) performed on a dataset of diamond information. The analysis includes data preprocessing, visualization, and modelling preparation.
 
 
 ## Introduction
@@ -37,7 +37,7 @@ We reviewed the counts by feature to assess the data distribution for machine le
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/12e9f9a9-65fc-4f70-8642-25e4432626d2)
 
 ### Remove rows based on outlier data
-We also removed rows where the count quantities of some features were extremely low and would be hard for the model to learn.
+We also removed rows where the count quantities of some features were extremely low and would be hard for a model to learn.  
 
 For example, cut_quality features of Good, Fair and Ideal had counts of 28, 5 and 1 respectively.  
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/202f7912-0884-4586-9dc4-f8146447495d)
@@ -51,7 +51,7 @@ This reduced our dataset to 213,134 rows.
 
 ### Data Binning and Grouping
 Certain features are grouped or combined into new categories.  
-This approach helps in addressing low counts for certain quality values and making the data more manageable and meaningful for analysis and modelling.
+This approach helps in addressing low counts for certain quality values and making the data more manageable and meaningful for analysis and modelling.  Feature logic was also taken into consideration to ensure the integrity of the feature was not negatively impacted. 
 
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134125287/033d329b-fde4-4b42-825a-3a79055c0741)
 
@@ -79,7 +79,7 @@ Categorical and numerical features are separated, and the target variable is def
 
 
 ## Correlation Analysis
-Pearson correlation and Seaborn heatmap are used to analyse the relationships between numerical features.  
+Pearson correlation and heatmap are used to analyse the relationships between numerical features.  
 
 ### Pearson correlation
 
