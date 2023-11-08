@@ -210,6 +210,7 @@ Train all selected models using the training data, each using either the top 11 
 
 ### Selecting the Model with the Best Cross-Validation Score
 We calculate the mean of cross-validation scores for the models using the negative root mean square error as the evaluation metric. Based on the cross-validation scores, we identify the model with the best performance. This model will be selected for further evaluation and testing.
+
 ![Screenshot 2023-11-08 at 8 43 17 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/c0638ee7-3b18-4640-b0d3-375611a7f362)
 
 ![Screenshot 2023-11-08 at 8 43 37 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/8148e5db-70e7-4209-a143-6a4cd89fa328)
@@ -219,9 +220,10 @@ We also utilized a deep learning neural network to demonstrate model optimizatio
 
 The decision was driven by the need for a more interpretable and transparent approach. Although the neural network displayed strong predictive capabilities, its complexity made it challenging to provide meaningful insights into the model's decision-making process. In contrast, the Random Forest regression model offers transparency and interpretability, allowing us to gain a clearer understanding of the factors influencing predictions.
 
+
 By choosing the Random Forest regression model, we aim to strike a balance between model performance and interpretability, ensuring that we can provide actionable insights based on the features that most impact our predictions. This decision aligns with our goal of not only achieving accurate predictions but also comprehending the underlying drivers of those predictions, ultimately leading to more informed decision-making.
 
-<img width="570" alt="image" src="https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134527987/44236eea-c513-4aea-8eb7-22b38d89754e">
+<img width="548" alt="Screenshot 2023-11-09 at 10 54 21 am" src="https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134527987/4c2c7c0c-0a47-41fa-a54a-7ffad7069e11">
 
 ### Testing the Model with the Best Score on the Test Set
 Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
