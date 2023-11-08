@@ -197,10 +197,12 @@ Train all selected models using the training data, each using either the top 11 
 ### Selecting the Model with the Best Cross-Validation Score
 We calculate the mean of cross-validation scores for the models using the negative root mean square error as the evaluation metric. Based on the cross-validation scores, we identify the model with the best performance. This model will be selected for further evaluation and testing.
 
+![Screenshot 2023-11-08 at 8 36 24 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/edb81f49-826b-4745-a50e-d2a9ba3c4b03)
+
 ### Testing the Model with the Best Score on the Test Set
 Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
 
-
+![Screenshot 2023-11-08 at 8 36 48 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/8d4ba28a-0b73-42fc-8a2a-30f580a0b723)
 
 ## Authorship
 
