@@ -202,6 +202,7 @@ We calculate the mean of cross-validation scores for the models using the negati
 
 ### Testing the Model with the Best Score on the Test Set
 Random Forest appears to be the model with the best scoring on negative root mean square error. We proceed to test this model on a separate test set and evaluate its performance using various parameters and metrics.
+
 ![Screenshot 2023-11-08 at 8 44 06 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/10cb707e-4502-4fdc-ac40-f08856ca97bc)
 
 ## Authorship
