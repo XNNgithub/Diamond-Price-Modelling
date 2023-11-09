@@ -239,10 +239,11 @@ This part of the process is focused on Web Page development, pass data from a we
 ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/e444f6a4-bcab-497f-84d6-d30204c98f52)
 
 3. JavaScript is used for interactivity between different sections and elements of the web page.
+   ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/95504674-05d0-49ac-8478-2b0d725022e5)
 
-4. HTML form element dropdown is used to collect user input.
+5. HTML form element dropdown is used to collect user input.
 
-5. We needed a Web Server to handle HTTP requests and responses, so we used Python and Flask for this purpose. We also created an API endpoint on the server to which the web page can send data. This API endpoint processes the data and return the result.
+6. We needed a Web Server to handle HTTP requests and responses, so we used Python and Flask for this purpose. We also created an API endpoint on the server to which the web page can send data. This API endpoint processes the data and return the result.
 
 7. We used a library called "Pickle" to load the pre-trained machine learning model on the server from local disk and the data is processed and transformed into required format before feeding it to the model. The model then process the data and make predictions.
 
