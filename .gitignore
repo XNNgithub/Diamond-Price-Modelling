@@ -1,2 +1,4 @@
+# Files to ignore
 .DS_Store
+# Folder to ignore
 model/
