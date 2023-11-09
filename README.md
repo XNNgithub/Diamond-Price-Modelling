@@ -235,8 +235,8 @@ This part of the process is focused on Web Page development, pass data from a we
 
 ## Steps involved in this process
 1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements of the web page.
-![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218)
-![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/e444f6a4-bcab-497f-84d6-d30204c98f52)
+   ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218)
+   ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/e444f6a4-bcab-497f-84d6-d30204c98f52)
 
 3. JavaScript is used for interactivity between different sections and elements of the web page.
    ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/95504674-05d0-49ac-8478-2b0d725022e5)
@@ -244,10 +244,12 @@ This part of the process is focused on Web Page development, pass data from a we
 5. HTML form element dropdown is used to collect user input.
 
 6. We needed a Web Server to handle HTTP requests and responses, so we used Python and Flask for this purpose. We also created an API endpoint on the server to which the web page can send data. This API endpoint processes the data and return the result.
+   ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/5ed65e3e-9d4a-49dc-bdf2-a089a4e2b612)
 
-7. We used a library called "Pickle" to load the pre-trained machine learning model on the server from local disk and the data is processed and transformed into required format before feeding it to the model. The model then process the data and make predictions.
+8. We used a library called "Pickle" to load the pre-trained machine learning model on the server from local disk and the data is processed and transformed into required format before feeding it to the model. The model then process the data and make predictions.
 
-8. We used JavaScript to send the data to the API endpoint from the web page and after the data is processed and the pridiction is made, the server formats the response and send the result back to the web page using HTTP response. JavaScript on the web page will receive the result and update the DOM (Document Object Model) to display the prediction on the page.
+9. We used JavaScript to send the data to the API endpoint from the web page and after the data is processed and the pridiction is made, the server formats the response and send the result back to the web page using HTTP response. JavaScript on the web page will receive the result and update the DOM (Document Object Model) to display the prediction on the page.
+   ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/68e84314-cb7f-4c14-baee-c53fd11069a3)
 
 ## Authorship
 
