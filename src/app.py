@@ -32,7 +32,7 @@ def process():
     predicted_price  =loaded_model.predict(input_df)
 
     # Text to display on the html page
-    concatenated_text = f"The estimated price of Diamond is ${format(int(predicted_price[0]), ',')}"
+    concatenated_text = f"The estimated price of the Diamond is ${format(int(predicted_price[0]), ',')}"
     return f'displayResult({{"concatenated_text": "{concatenated_text}"}});'
 
 if __name__ == '__main__':

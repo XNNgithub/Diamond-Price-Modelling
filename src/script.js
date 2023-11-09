@@ -62,14 +62,14 @@ files.forEach(function(file) {
 function resetDropdownValues() {
     var dropdowns = document.querySelectorAll('select');
     dropdowns.forEach(function(dropdown) {
-        dropdown.selectedIndex = 0; // Set the selected index to the first option (assuming "Select" is the first option)
+        dropdown.selectedIndex = 0;
     });
 }
 
 // Add event listener to tabs
 document.querySelectorAll('nav a').forEach(function(tab) {
     tab.addEventListener('click', function() {
-        resetDropdownValues(); // Reset dropdown values when a tab is clicked
+        resetDropdownValues();
     });
 });
 
@@ -92,13 +92,7 @@ function displayResult(data) {
     var outputContainer = document.getElementById('output-container');
     outputContainer.style.display = 'block';
 
-    // Get the result image and text elements
-    //var resultImage = document.getElementById('result-image');
     var resultText = document.getElementById('result-text');
-
-    // Set the image source and alt text
-    //resultImage.src = data.image_url;
-    //resultImage.alt = "Result Image";
 
     // Set the text content
     resultText.textContent = data.concatenated_text;
