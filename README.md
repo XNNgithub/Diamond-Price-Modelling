@@ -234,15 +234,17 @@ Random Forest appears to be the model with the best scoring on negative root mea
 This part of the process is focused on Web Page development, pass data from a web page, run it on a model and bring the result back to the page.
 
 ## Steps involved in this process
-1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements of the web page 
+1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements of the web page.
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218) ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/b9e9af91-5425-44e1-962a-22cc54151abb)
 
-3. JavaScript is used for interactivity between different sections and elements of the web page
 
-4. HTML form element dropdown is used to collect user input
+3. JavaScript is used for interactivity between different sections and elements of the web page.
+
+4. HTML form element dropdown is used to collect user input.
 
 5. We needed a Web Server to handle HTTP requests and responses, so we used Python and Flask for this purpose. We also created an API endpoint on the server to which the web page can send data. This API endpoint processes the data and return the result.
 
-7. We used a library called "Pickle" to load the pre-trained machine learning model on the server from local disk and the data is processed and transformed into required format before feeding it to the model. The model then process the data and make predictions
+7. We used a library called "Pickle" to load the pre-trained machine learning model on the server from local disk and the data is processed and transformed into required format before feeding it to the model. The model then process the data and make predictions.
 
 8. We used JavaScript to send the data to the API endpoint from the web page and after the data is processed and the pridiction is made, the server formats the response and send the result back to the web page using HTTP response. JavaScript on the web page will receive the result and update the DOM (Document Object Model) to display the prediction on the page.
 
