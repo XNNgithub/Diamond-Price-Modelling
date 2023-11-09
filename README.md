@@ -215,7 +215,7 @@ We calculate the mean of cross-validation scores for the models using the negati
 
 ![Screenshot 2023-11-08 at 8 43 37 pm](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134599676/8148e5db-70e7-4209-a143-6a4cd89fa328)
 
-## Deep Learning Neural Network
+### Deep Learning Neural Network
 We also utilized a deep learning neural network to demonstrate model optimization, training it over 100 epochs and achieving an R2 score of 0.82, we ultimately decided with Random Forest regression model.
 
 The decision was driven by the need for a more interpretable and transparent approach. Although the neural network displayed strong predictive capabilities, its complexity made it challenging to provide meaningful insights into the model's decision-making process. In contrast, the Random Forest regression model offers transparency and interpretability, allowing us to gain a clearer understanding of the factors influencing predictions.
