@@ -234,7 +234,8 @@ Random Forest appears to be the model with the best scoring on negative root mea
 This part of the process is focused on Web Page development, pass data from a web page, run it on a model and bring the result back to the page.
 
 ## Steps involved in this process
-1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements of the web page.
+1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements
+on the web page.
    ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218)
    ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/e444f6a4-bcab-497f-84d6-d30204c98f52)
 
