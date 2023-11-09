@@ -235,8 +235,8 @@ This part of the process is focused on Web Page development, pass data from a we
 
 ## Steps involved in this process
 1. HTML is used to create the basic structure of the web page and CSS is used for the size, style and position of different elements of the web page.
-![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218) ![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/b9e9af91-5425-44e1-962a-22cc54151abb)
-
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/1df4a99e-7982-45dd-9523-09b24e9ef218)
+![image](https://github.com/XNNgithub/Diamond-Price-Modelling/assets/134993882/e444f6a4-bcab-497f-84d6-d30204c98f52)
 
 3. JavaScript is used for interactivity between different sections and elements of the web page.
 
